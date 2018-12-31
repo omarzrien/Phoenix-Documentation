@@ -50,8 +50,10 @@ Follow these instructions in order!
 Blog Entries
 ============
 
-.. postlist:: 
-   :date: %b %d, %Y
-   :list-style: circle
-   :format: {date} - {title}
+.. only:: html
+
+   .. postlist:: 
+      :date: %b %d, %Y
+      :list-style: circle
+      :format: {date} - {title}
 

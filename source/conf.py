@@ -38,7 +38,7 @@ blog_baseurl = u'True'
 # -- Project information -----------------------------------------------------
 
 project = 'Phoenix'
-copyright = '2018, CTRE'
+copyright = '2019, CTRE'
 author = 'CTRE'
 
 # The short X.Y version
@@ -59,6 +59,7 @@ release = ''
 extensions = [
     'sphinx.ext.autodoc',
 	'javasphinx',
+    'sphinx.ext.intersphinx',
 	'ablog',
 ]
 # Javadoc
