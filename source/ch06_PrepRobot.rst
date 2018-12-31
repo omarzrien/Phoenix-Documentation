@@ -57,6 +57,10 @@ Create a pristine LabVIEW application.  Add a CTRE device to Begin.Vi.  For exam
 
 .. image:: img/verify-LV.png
 
+.. tip:: Drag drop the following into your Begin.vi
+
+.. image:: img/lv-snip-1.png
+
 Connect DS and turn on Warnings and Prints by selecting the bottom most option.
 
 .. image:: img/prep-rc-2.png
