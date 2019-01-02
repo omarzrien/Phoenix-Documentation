@@ -381,7 +381,7 @@ This ramp rate is in effect regardless of which mode is selected (throttle, slav
 
 Ramp can be set in time from neutral to full using configOpenLoopRampRate().
 
-.. note:: configClosedLoopRampRate() can be used to select the ramp during closed-loop sensored operations.
+.. note:: configClosedLoopRampRate() can be used to select the ramp during closed-loop (sensor) operations.
 
 .. note:: The slowest ramp possible is ten seconds (from neutral to full), though this is quite excessive.  
 

@@ -221,3 +221,18 @@ Press self-test button and confirm the results.
 You can also use the Blink/Clear faults button to blink the selected device and clear any previously logged sticky faults.
 
 .. image:: img/bring-9.png
+
+
+
+Driver Station Versions Page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It is worth mentioning there is basic support of reporting the CAN devices and their versions in the diagnostics tab of the Driver Station.
+
+If there is a mixed collection of firmware versions for a given product type, the version will report "Inconsistent".
+
+.. image:: img/ds-versions.png
+
+.. note:: The recommended method for confirming firmware versions is to use Phoenix Tuner.
+
+.. note:: There is a known issue where ribbon-cabled Pigeons may erroneously report as a Talon.  Since this is not a critical feature of the Driver Station, this should not be problematic for FRC teams.

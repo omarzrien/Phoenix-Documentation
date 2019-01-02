@@ -104,11 +104,23 @@ Device Firmware Files (crf)
 ----------------------------------------------------------------------------------
 The test firmware files for all CTRE devices are packaged with the Windows Installer (and has been for years).  However, many FRC teams don’t notice, or prefer to download them directly from the product pages on the ctr-electronics.com website.  If Internet access is available, they can be downloaded as such.
 
-The FRC Software installer will create a directory with various firmware files/tools for many control system components.  Typically, the path is @“C:\Users\Public\Documents\FRC”.
+The FRC Software installer will create a directory with various firmware files/tools for many control system components.  
+Typically, the path is:
+
+.. code-block:: html
+
+  C:\Users\Public\Documents\FRC
  
+
 .. image:: img/crf.png
  
-When the path is entered into a browser, the browser may fix-up the path into @"C:\Users\Public\Public Documents\FRC". 
+When the path is entered into a browser, the browser may fix-up the path:
+
+
+.. code-block:: html
+
+   C:\Users\Public\Public Documents\FRC
+
 
 In this directory are the initial release firmware CRF files for all CTRE CAN bus devices, including the Talon SRX. 
 
@@ -192,8 +204,12 @@ FRC C++/Java - Verify Installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The offline files for vscode are typically installed in:
-- C:\Users\Public\frc2019\vendordeps\Phoenix.json (File used by vscode to include Phoenix in your project)
-- C:\Users\Public\frc2019\maven\com\ctre\frcbeta\phoenix (multiple maven-style library files)
+
+.. code-block:: html
+
+  C:\Users\Public\frc2019\vendordeps\Phoenix.json (File used by vscode to include Phoenix in your project)
+  C:\Users\Public\frc2019\maven\com\ctre\frcbeta\phoenix (multiple maven-style library files)
+
 
 Your drive letter may be different than "C:".
 After running the Phoenix Installer, the instructions to add or update Phoenix in your robot project must be followed.
@@ -246,9 +262,13 @@ Be sure to include “ctre/Phoenix.h”, otherwise TalonSRX will not be recogniz
 
 Add an example call, take your time to ensure to spell it correctly.  
 
-Intellisense may not be functional at this point in time (note the green underline indicating VS did not parse the header).  Typically, a manual restart of VSCode will correct this.
-
 .. image:: img/verify-7.png
+
+Intellisense may not be functional at this point in time (note the green underline indicating VS did not parse the header).  
+
+.. image:: img/verify-7-2.png
+
+.. tip:: Perform a Gradle C++ Refresh, confirm it completes, and manually restart of VSCode will correct this.
 
 If you see linker errors, then the desktop simulation checkbox was likely checked.
 
