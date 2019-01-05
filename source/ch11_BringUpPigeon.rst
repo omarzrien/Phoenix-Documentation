@@ -17,6 +17,7 @@ Phoenix Tuner
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Open Phoenix tuner and use the self-test feature to confirm values.
 Rotate IMU and confirm Yaw moves as expected.
+
 .. image:: img/bring-12.png
 
 .. note:: Moving counter-clockwise is interpreted as a positive change.
@@ -37,6 +38,7 @@ The greatest source of yaw drift in the FRC use case is drift due to changes in 
 This can be compensated by running the temperature self-calibration once.
 
 In previous seasons this can be invoked via Phoenix API.
+
 .. image:: img/bring-13.png
 
 However, starting in 2019, you can manually enter temperature compensation mode by opening the Pigeon IMU Cal tab (go to Windows in the top menu bar).

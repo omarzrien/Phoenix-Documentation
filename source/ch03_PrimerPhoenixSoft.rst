@@ -15,8 +15,12 @@ This can replace the roboRIO in use cases that don’t require the full features
 
 .. note:: Phoenix framework is designed so that it is possible to control/leverage Talons, Victors, Pigeons, CANifiers outside of the roboRIO (Rasp Pi + socket CAN for example), and use the roboRIO/DriverStation for safely enable/disable the actuators.  Whether this is FRC legal will depend on the 2019 FRC rules.
 
-There are tons of examples in all languages at CTRE’s GitHub account.
-https://github.com/CrossTheRoadElec/
+There are tons of examples in all languages at CTRE’s GitHub account:
+
+- https://github.com/CrossTheRoadElec/Phoenix-Examples-Languages
+- https://github.com/CrossTheRoadElec/Phoenix-Examples-LabVIEW
+
+Entire GitHub organization: https://github.com/CrossTheRoadElec/
 
 Phoenix-Examples-Languages and Phoenix-Examples-LabVIEW are specifically tested on the FRC RoboRIO control system.
 

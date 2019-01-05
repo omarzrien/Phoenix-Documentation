@@ -423,48 +423,8 @@ After setting the three configurations, current limiting must be enabled via ena
 
 
 
-
-
-
-
-
-
-
-Limit Switches
-------------------------------------------------------
-Talon SRX and Victor SPX have limit features that will auto-neutral the motor output if a limit switch activates.  
-
-An “out of the box” Talon will default with the limit switch setting of “Normally Open” for both forward and reverse.  This means that motor drive is allowed when a limit switch input is not closed (i.e. not connected to ground).  When a limit switch input is closed (is connected to ground) the Talon SRX will disable motor drive and individually blink both LEDs red in the direction of the fault (red blink pattern will move towards the M+/white wire for positive limit fault, and towards M-/green wire for negative limit fault).
-
-Since an “out of the box” Talon will likely not be connected to limit switches (at least not initially) and because limit switch inputs are internally pulled high (i.e. the switch is open), the limit switch feature is default to “normally open”.  This ensures an “out of the box” Talon will drive even if no limit switches are connected.
-
-For more information on Limit Switch wiring/setup, see the Talon SRX User’s Guide.
-
-.. image:: img/bring-24.png
-
-Limit switch features can be disabled or changed to “Normally Closed” in Tuner and in API.
-
-
-
-Remote Limit Switches
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-A Talon SRX or Victor SPX can use a remote sensor as the limit switch (such as another Talon SRX or CANifier).
-
-Config the Limit Forward/Reverse Source from Gadgeteer Pins, to Remote Talon or Remote CANifier.  Then config the Limit Forward/Reverse Device ID for the remote Talon or CANifier.
-
-Use self-test on the motor-driving motor controller to confirm limit switches are interpreted correctly.  If they are not correct, then self-test the remote device to determine the issue.
-
-Soft Limits
-------------------------------------------------------
-Soft limits can be used to disable motor drive when the “Sensor Position” is outside of a specified range.  Forward throttle will be disabled if the “Sensor Position” is greater than the Forward Soft Limit.  Reverse throttle will be disabled if the “Sensor Position” is less than the Reverse Soft Limit.  The respective Soft Limit Enable must be enabled for this feature to take effect.
-
-The settings can be set and confirmed in the roboRIO Web-based Configuration.
-
-
-	
-
 Reading status signals
-------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The Talon SRX transmits most of its status signals periodically, i.e. in an unsolicited fashion.  This improves bus efficiency by removing the need for “request” frames, and guarantees the signals necessary for the wide range of use cases Talon supports, are available.
 
@@ -483,6 +443,38 @@ Included in the list of signals are:
 - Brake State (coast vs brake)
 - Closed-Loop Error, the difference between closed-loop set point and actual position/velocity.
 - Sensor Position and Velocity, the signed output of the selected Feedback device (robot must select a Feedback device, or rely on default setting of Quadrature Encoder). 
+
+
+Limit Switches
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Talon SRX and Victor SPX have limit features that will auto-neutral the motor output if a limit switch activates.  
+
+An “out of the box” Talon will default with the limit switch setting of “Normally Open” for both forward and reverse.  This means that motor drive is allowed when a limit switch input is not closed (i.e. not connected to ground).  When a limit switch input is closed (is connected to ground) the Talon SRX will disable motor drive and individually blink both LEDs red in the direction of the fault (red blink pattern will move towards the M+/white wire for positive limit fault, and towards M-/green wire for negative limit fault).
+
+Since an “out of the box” Talon will likely not be connected to limit switches (at least not initially) and because limit switch inputs are internally pulled high (i.e. the switch is open), the limit switch feature is default to “normally open”.  This ensures an “out of the box” Talon will drive even if no limit switches are connected.
+
+For more information on Limit Switch wiring/setup, see the Talon SRX User’s Guide.
+
+.. image:: img/bring-24.png
+
+Limit switch features can be disabled or changed to “Normally Closed” in Tuner and in API.
+
+
+
+Remote Limit Switches
+----------------------------------------------------------------
+A Talon SRX or Victor SPX can use a remote sensor as the limit switch (such as another Talon SRX or CANifier).
+
+Config the Limit Forward/Reverse Source from Gadgeteer Pins, to Remote Talon or Remote CANifier.  Then config the Limit Forward/Reverse Device ID for the remote Talon or CANifier.
+
+Use self-test on the motor-driving motor controller to confirm limit switches are interpreted correctly.  If they are not correct, then self-test the remote device to determine the issue.
+
+Soft Limits
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Soft limits can be used to disable motor drive when the “Sensor Position” is outside of a specified range.  Forward throttle will be disabled if the “Sensor Position” is greater than the Forward Soft Limit.  Reverse throttle will be disabled if the “Sensor Position” is less than the Reverse Soft Limit.  The respective Soft Limit Enable must be enabled for this feature to take effect.
+
+The settings can be set and confirmed in the roboRIO Web-based Configuration.
+
 
 
 

@@ -47,8 +47,8 @@ Option 1: Windows installer (strongly recommended)
 ----------------------------------------------------------------------------------
 Environments: Windows-LabVIEW, Windows-C++/Java, HERO C#
 
-Phoenix can be downloaded at http://www.ctr-electronics.com/hro.html#product_tabs_technical_resources.
-Users can download the installer zip. 
+Phoenix Installer zip can be downloaded at:
+http://www.ctr-electronics.com/hro.html#product_tabs_technical_resources.
 
 It is typically named Phoenix Framework_Windows_vW.X.Y.Z.zip
 
@@ -124,7 +124,7 @@ When the path is entered into a browser, the browser may fix-up the path:
 
 In this directory are the initial release firmware CRF files for all CTRE CAN bus devices, including the Talon SRX. 
 
-The latest firmware to be used at time of writing is version 4.X for Talon SRX, Victor SPX, CANifier, and Pigeon IMU.
+The latest firmware to be used at time of writing is version 4.11 for Talon SRX, Victor SPX, and 4.00 for CANifier, and Pigeon IMU.
 
 .. note:: Additionally, newer updates may be provided online at http://www.ctr-electronics.com.
 
@@ -374,7 +374,7 @@ The CTRE Palette is located in:
 
 • WPI Robotics Library -> Third Party.
 
-.. image:: img/lv-palette.png
+.. image:: img/lv-paletteMenu.png
 
 This palette can also be found in:
 

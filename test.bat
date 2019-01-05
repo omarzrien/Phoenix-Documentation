@@ -8,7 +8,11 @@
 
 # pip install ablog
 
+# pip install latexpages # not necessary
+
 rmdir /s /q build
+
+# call .\make.bat latex
 
 call .\make.bat html
 
