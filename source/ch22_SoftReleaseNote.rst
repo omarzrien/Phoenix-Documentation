@@ -5,7 +5,7 @@ Talon SRX / Victor SPX
 --------------------------------------------------------
 The kickoff/latest firmware is 4.11.
 
-This version is adequeate for FRC and nonFRC use (notwithstanding known errata with HERO C#).
+This version is adequate for FRC and nonFRC use (notwithstanding known errata with HERO C#).
 
 
 CANifier

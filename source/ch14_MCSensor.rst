@@ -309,7 +309,7 @@ Knowing the maximum possible sensor velocity, compare this against the sensor ve
 
 You will likely find your ideal value is greater than your measured value due to load.  In the case of testing a drive train, it is recommend to place robot on a tote/crate so that wheels can spin free.
 
-You may find that you cannot safely drive motor any where near full motor output due to the design of the mechanism.  In which case choose a slower duty cycle and scale by the expected velocity ratiometrically.
+If your mechanism does not allow for full motor output due to its design, choose a slower duty cycle and scale by the expected velocity.
 
 
 

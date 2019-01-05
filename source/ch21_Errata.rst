@@ -1,7 +1,7 @@
 Errata
 ======
 
-HERO firmware compatibilty with firmware 4.X
+HERO firmware compatibility with firmware 4.X
 --------------------------------------------------------
 The HERO robot controller still requires 10.X firmware in the motor controllers to function correctly.
 This will addressed in a future release (which updates HERO).

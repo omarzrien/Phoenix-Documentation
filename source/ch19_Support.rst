@@ -20,7 +20,7 @@ http://www.ctr-electronics.com/contacts-us
 
 The best method for contacting support is via our email (support@ctr-electronics.com). This allows for simple sharing of screenshots and supplemental file attachments.
 
-If seeking help troubleshooting hardware issues, please answer the questions under "Warrenty" inside the "Support Request form".
+If seeking help troubleshooting hardware issues, please answer the questions under "Warranty" inside the "Support Request form".
 
 
 To resolve your issue in an expedient fashion, we need the following:

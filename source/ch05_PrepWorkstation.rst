@@ -26,7 +26,8 @@ It is recommended to install the FRC Driver Station Utilities. This will install
 
 Important note regarding FRC 2019 C++ / Java.
 ----------------------------------------------------------------------------------
-The FRC C++/Java standard distribution for 2019 is quite different than previous seasons. WPILIB has replaced the Eclipse-based development environment with Microsoft Visual Studio Code and GradleRIO.This is a considerable change in both user experience and in implementation. If you are developing C++/Java FRC programs, we strongly recommend testing full deployment to your robot controller before installing Phoenix and porting previous season software.
+The FRC C++/Java standard distribution for 2019 is quite different than previous seasons. WPILIB has replaced the Eclipse-based development environment with Microsoft Visual Studio Code and GradleRIO.
+This is a considerable change in both user experience and in implementation. If you are developing C++/Java FRC programs, we strongly recommend testing full deployment to your robot controller before installing Phoenix and porting previous season software.
 A recommended test is to:
 1. Create a project from scratch
 2. Make a simple change such as add a print statement with a counter.

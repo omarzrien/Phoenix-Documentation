@@ -11,7 +11,7 @@ These are wrappers for the Talon SRX and Victor SPX, that provide:
 
 - LiveWindow support
 - Motor Safety features
-- Compatibile with DriveTrain classes
+- Compatibility with DriveTrain classes
 
 
 

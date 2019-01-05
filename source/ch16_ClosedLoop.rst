@@ -16,7 +16,7 @@ Regardless of which closed loop control mode, the following statements apply:
 
 - Current limit and voltage compensation selections are honored (just like in open-loop PercentOutput mode)
 - “Ramping” can be configured using configClosedloopRamp (routine or VI)
-- All other open-loop features are honored during closed loop (neutral mode, peaks, nominal ouputs, etc).
+- All other open-loop features are honored during closed loop (neutral mode, peaks, nominal outputs, etc).
 - Closed Loop controller will pull closed-loop gain/setting information from a selected slot.  There are four slots to choose from (for gain-scheduling).
 - PIDF controller takes in target and sensor position measurements in “raw” sensor units.  This means a CTRE Mag Encoder will count 4096 units per rotation.
 - PIDF controller takes in target and sensor velocity measurements in “raw” sensor units per 100ms.  
@@ -81,7 +81,7 @@ There is no general requirement to “wait for the profile to finish”, however
 
 A Trapezoidal Motion Profile generally ramps the output velocity at a specified acceleration until cruise velocity is reached.  This cruise velocity is then maintained until the system needs to deaccelerate to reach the target position and stop motion.  Talon determines when these critical points occur on-the-fly.   
 
-.. note:: If the remaining sensor distance to travel is small, the velocity may not reach cruise velocity as this would overshoot the target position.  This is often refered to as a “triangle profile”.
+.. note:: If the remaining sensor distance to travel is small, the velocity may not reach cruise velocity as this would overshoot the target position.  This is often referred to as a “triangle profile”.
 
 .. image:: img/closedlp-1.png
 
@@ -169,7 +169,7 @@ Motion Magic / Position / Velocity / Current Closed Loop Closed Loop
 Closed-looping the position/velocity value of a sensor is explained in this section.  
 This section also applies to the current (draw) closed loop mode.
 
-Relevent source examples can be found at:
+Relevant source examples can be found at:
 
 - https://github.com/CrossTheRoadElec/Phoenix-Examples-Languages
 - https://github.com/CrossTheRoadElec/Phoenix-Examples-LabVIEW
@@ -307,12 +307,12 @@ General Closed-Loop Configs
 | PID 0 Primary Feedback Sensor          |  | Selects the sensor source for PID0 closed loop, soft limits, and    |
 |                                        |  | value reporting for the SelectedSensor API.                         |
 +----------------------------------------+------------------------------------------------------------------------+
-| PID 0 Primary Sensor Coefficient       |  | Scalar (0,1] to multiply selected sensor value before appling.      |
+| PID 0 Primary Sensor Coefficient       |  | Scalar (0,1] to multiply selected sensor value before using.        |
 |                                        |  | Note this will reduce resolution of the closed-loop.                |
 +----------------------------------------+------------------------------------------------------------------------+
 | PID 1 Aux Feedback Sensor              |  Select the sensor to use for Aux PID[1].                              |
 +----------------------------------------+------------------------------------------------------------------------+
-| PID 1 Aux Sensor Coefficient           |  | Scalar (0,1] to multiply selected sensor value before applying.     |
+| PID 1 Aux Sensor Coefficient           |  | Scalar (0,1] to multiply selected sensor value before using.        |
 |                                        |  | Note that this will reduce the resolution of the closed-loop.       |
 +----------------------------------------+------------------------------------------------------------------------+
 | PID 1 Polarity                         |  | False: motor output = PID[0] + PID[1],  follower = PID[0] - PID[1]. |
