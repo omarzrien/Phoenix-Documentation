@@ -25,7 +25,7 @@ New features below
 * Phoenix Tuner provides the means of driving Talons for simple testing.
 * Phoenix Tuner includes a plotter.
 * Phoenix Tuner provides import and export of all configs.
-* New config routines to simplify management of persistent settings: configAll and configFactoryDefault 
+* New config routines to simplify management of persistent settings: configFactoryDefault and `configAllSettings <https://github.com/CrossTheRoadElec/Phoenix-Examples-Languages/tree/master/Java/Config%20All>`_
 * Compatibility with WPI distributed Visual Studio Code interface.
 * Maven hosted API provides an alternative to using the Phoenix installer to get API binaries (however the offline install is highly recommended).
 * No more FRC versus nonFRC firmware, see "FRC Lock" features for explanation.
